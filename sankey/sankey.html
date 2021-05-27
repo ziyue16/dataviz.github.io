@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body style="height: 100%; margin: 0">
+        <div id="container" style="height: 95%"></div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+        <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+
+//var option;
+
+    myChart.setOption({
+        timeline: {
+                    //loop: false,        
+                    axisType: 'category',
+                    show: true,
+                    autoPlay: true,
+                    playInterval: 1500,
+                    right: 5,
+                    top: 20,
+                    bottom: 20,
+                    width: 50,
+                    orient: 'vertical',
+                    data: ['2011', '2013', '2015', '2018', 'total']         
+                },  
+        tooltip: {
+            trigger: 'item',
+            triggerOn: 'mousemove'
+        },
+        toolbox: {
+        //orient: 'vertical',
+        top: 'left',
+        feature: {
+            dataView: {readOnly: false},
+            restore: {},
+            saveAsImage: {}
+        }
+        },
+        options:[
+            //2011
+            {
+                title: {
+                    text: 'Inter-generational Transfers (2011)',
+                    subtext: 'Source: The China Health and Retirement Longitudinal Study (CHARLS) '
+                },
+                series: [
+                    {
+                        type: 'sankey',
+                        data: [
+                            {"name":"visit frequency - parents"},
+                            {"name":"remotely contact frequency - parents"},
+                            {"name":"financial transfers - parents (thousand)"},
+                            {"name":"co-residence - parents"},
+                            {"name":"Parents - look after grandchildren"},
+                            {"name":"Parents - financial support (thousand)"},
+                            {"name":"first child"},
+                            {"name":"second child"},
+                            {"name":"third and higher birthorder child"}
+                        ],
+                        links: [
+                            {"source": "Parents - look after grandchildren", "target": "first child",  "value": 0.0001},
+                            {"source": "Parents - financial support (thousand)", "target": "first child",  "value": 0.0001},
+                            {"source": "Parents - look after grandchildren",  "target": "second child",  "value": 0.0001},
+                            {"source": "Parents - financial support (thousand)",  "target": "second child",  "value": 0.0001},
+                            {"source": "Parents - look after grandchildren",  "target": "third and higher birthorder child",  "value": 0.0001},
+                            {"source": "Parents - financial support (thousand)",  "target": "third and higher birthorder child",  "value": 0.0001},
+                            {"source": "first child", "target": "visit frequency - parents",  "value": 2.06},
+                            {"source": "first child", "target": "remotely contact frequency - parents",  "value": 1.53},
+                            {"source": "first child", "target": "financial transfers - parents (thousand)",  "value": 0.28860},
+                            {"source": "first child", "target": "co-residence - parents", "value": 0.06},
+                            {"source": "second child","target": "visit frequency - parents", "value": 1.99},
+                            {"source": "second child", "target": "remotely contact frequency - parents", "value": 1.26},
+                            {"source": "second child", "target": "financial transfers - parents (thousand)", "value": 0.29853},
+                            {"source": "second child", "target": "co-residence - parents", "value": 0.06},
+                            {"source": "third and higher birthorder child", "target": "visit frequency - parents", "value": 1.89},
+                            {"source": "third and higher birthorder child", "target": "remotely contact frequency - parents", "value": 0.99},
+                            {"source": "third and higher birthorder child", "target": "financial transfers - parents (thousand)", "value": 0.31106},
+                            {"source": "third and higher birthorder child", "target": "co-residence - parents", "value": 0.06}
+                        ],
+                        emphasis: {
+                            focus: 'adjacency'
+                        },
+                        lineStyle: {
+                            color: 'gradient',
+                            curveness: 0.5
+                        }
+                    },
+                ]
+            },
+            //2013
+            {
+                title: {
+                    text: 'Inter-generational Transfers (2013)',
+                    subtext: 'Source: The China Health and Retirement Longitudinal Study (CHARLS)'
+                },
+                series: [
+                    {
+                        type: 'sankey',
+                        data: [
+                            {"name":"visit frequency - parents"},
+                            {"name":"remotely contact frequency - parents"},
+                            {"name":"financial transfers - parents (thousand)"},
+                            {"name":"co-residence - parents"},
+                            {"name":"Parents - look after grandchildren"},
+                            {"name":"Parents - financial support (thousand)"},
+                            {"name":"first child"},
+                            {"name":"second child"},
+                            {"name":"third and higher birthorder child"}
+                        ],
+                        links: [
+                            {"source": "Parents - look after grandchildren", "target": "first child",  "value": 0.24},
+                            {"source": "Parents - financial support (thousand)", "target": "first child",  "value": 0.47469},
+                            {"source": "Parents - look after grandchildren",  "target": "second child",  "value": 0.20},
+                            {"source": "Parents - financial support (thousand)",  "target": "second child",  "value": 0.33499},
+                            {"source": "Parents - look after grandchildren",  "target": "third and higher birthorder child",  "value": 0.14},
+                            {"source": "Parents - financial support (thousand)",  "target": "third and higher birthorder child",  "value": 0.19223},
+                            {"source": "first child", "target": "visit frequency - parents",  "value": 2.88},
+                            {"source": "first child", "target": "remotely contact frequency - parents",  "value": 1.16},
+                            {"source": "first child", "target": "financial transfers - parents (thousand)",  "value": 1.33850},
+                            {"source": "first child", "target": "co-residence - parents", "value": 0.21},
+                            {"source": "second child","target": "visit frequency - parents", "value": 2.80},
+                            {"source": "second child", "target": "remotely contact frequency - parents", "value": 0.99},
+                            {"source": "second child", "target": "financial transfers - parents (thousand)", "value": 1.24797},
+                            {"source": "second child", "target": "co-residence - parents", "value": 0.20},
+                            {"source": "third and higher birthorder child", "target": "visit frequency - parents", "value": 2.60},
+                            {"source": "third and higher birthorder child", "target": "remotely contact frequency - parents", "value": 0.81},
+                            {"source": "third and higher birthorder child", "target": "financial transfers - parents (thousand)", "value": 1.06694},
+                            {"source": "third and higher birthorder child", "target": "co-residence - parents", "value": 0.18}
+                        ],
+                        emphasis: {
+                            focus: 'adjacency'
+                        },
+                        lineStyle: {
+                            color: 'gradient',
+                            curveness: 0.5
+                        }
+                    }
+                ]
+            },
+            //2015
+            {
+                title: {
+                    text: 'Inter-generational Transfers (2015)',
+                    subtext: 'Source: The China Health and Retirement Longitudinal Study (CHARLS)'
+                },
+                series: [
+                    {
+                        type: 'sankey',
+                        data: [
+                            {"name":"visit frequency - parents"},
+                            {"name":"remotely contact frequency - parents"},
+                            {"name":"financial transfers - parents (thousand)"},
+                            {"name":"co-residence - parents"},
+                            {"name":"Parents - look after grandchildren"},
+                            {"name":"Parents - financial support (thousand)"},
+                            {"name":"first child"},
+                            {"name":"second child"},
+                            {"name":"third and higher birthorder child"}
+                        ],
+                        links: [
+                            {"source": "Parents - look after grandchildren", "target": "first child",  "value": 0.25},
+                            {"source": "Parents - financial support (thousand)", "target": "first child",  "value": 1.24157},
+                            {"source": "Parents - look after grandchildren",  "target": "second child",  "value": 0.21},
+                            {"source": "Parents - financial support (thousand)",  "target": "second child",  "value": 0.85247},
+                            {"source": "Parents - look after grandchildren",  "target": "third and higher birthorder child",  "value": 0.14},
+                            {"source": "Parents - financial support (thousand)",  "target": "third and higher birthorder child",  "value": 0.41717},
+                            {"source": "first child", "target": "visit frequency - parents",  "value": 2.75},
+                            {"source": "first child", "target": "remotely contact frequency - parents",  "value": 1.25},
+                            {"source": "first child", "target": "financial transfers - parents (thousand)",  "value": 2.03275},
+                            {"source": "first child", "target": "co-residence - parents", "value": 0.21},
+                            {"source": "second child","target": "visit frequency - parents", "value": 2.69},
+                            {"source": "second child", "target": "remotely contact frequency - parents", "value": 1.06},
+                            {"source": "second child", "target": "financial transfers - parents (thousand)", "value": 1.85291},
+                            {"source": "second child", "target": "co-residence - parents", "value": 0.20},
+                            {"source": "third and higher birthorder child", "target": "visit frequency - parents", "value": 2.54},
+                            {"source": "third and higher birthorder child", "target": "remotely contact frequency - parents", "value": 0.84},
+                            {"source": "third and higher birthorder child", "target": "financial transfers - parents (thousand)", "value": 1.44832},
+                            {"source": "third and higher birthorder child", "target": "co-residence - parents", "value": 0.18}
+                        ],
+                        emphasis: {
+                            focus: 'adjacency'
+                        },
+                        lineStyle: {
+                            color: 'gradient',
+                            curveness: 0.5
+                        }
+                    }
+                ]
+            },
+            //2018
+            {
+                title: {
+                    text: 'Inter-generational Transfers (2018)',
+                    subtext: 'Source: The China Health and Retirement Longitudinal Study (CHARLS)'
+                },
+                series: [
+                    {
+                        type: 'sankey',
+                        data: [
+                            {"name":"visit frequency - parents"},
+                            {"name":"remotely contact frequency - parents"},
+                            {"name":"financial transfers - parents (thousand)"},
+                            {"name":"co-residence - parents"},
+                            {"name":"Parents - look after grandchildren"},
+                            {"name":"Parents - financial support (thousand)"},
+                            {"name":"first child"},
+                            {"name":"second child"},
+                            {"name":"third and higher birthorder child"}
+                        ],
+                        links: [
+                            {"source": "Parents - look after grandchildren", "target": "first child",  "value": 0.24},
+                            {"source": "Parents - financial support (thousand)", "target": "first child",  "value": 1.08901},
+                            {"source": "Parents - look after grandchildren",  "target": "second child",  "value": 0.21},
+                            {"source": "Parents - financial support (thousand)",  "target": "second child",  "value": 0.74663},
+                            {"source": "Parents - look after grandchildren",  "target": "third and higher birthorder child",  "value": 0.12},
+                            {"source": "Parents - financial support (thousand)",  "target": "third and higher birthorder child",  "value": 0.33974},
+                            {"source": "first child", "target": "visit frequency - parents",  "value": 2.41},
+                            {"source": "first child", "target": "remotely contact frequency - parents",  "value": 1.55},
+                            {"source": "first child", "target": "financial transfers - parents (thousand)",  "value": 2.12860},
+                            {"source": "first child", "target": "co-residence - parents", "value": 0.16},
+                            {"source": "second child","target": "visit frequency - parents", "value": 2.28},
+                            {"source": "second child", "target": "remotely contact frequency - parents", "value": 1.41},
+                            {"source": "second child", "target": "financial transfers - parents (thousand)", "value": 1.93763},
+                            {"source": "second child", "target": "co-residence - parents", "value": 0.15},
+                            {"source": "third and higher birthorder child", "target": "visit frequency - parents", "value": 2.05},
+                            {"source": "third and higher birthorder child", "target": "remotely contact frequency - parents", "value": 1.05},
+                            {"source": "third and higher birthorder child", "target": "financial transfers - parents (thousand)", "value": 1.52406},
+                            {"source": "third and higher birthorder child", "target": "co-residence - parents", "value": 0.13}
+                        ],
+                        emphasis: {
+                            focus: 'adjacency'
+                        },
+                        lineStyle: {
+                            color: 'gradient',
+                            curveness: 0.5
+                        }
+                    }
+                ]
+            },
+            //total
+            {
+                title: {
+                    text: 'Inter-generational Transfers (all year average)',
+                    subtext: 'Source: The China Health and Retirement Longitudinal Study (CHARLS)'
+                },
+                series: [
+                    {
+                        type: 'sankey',
+                        data: [
+                            {"name":"visit frequency - parents"},
+                            {"name":"remotely contact frequency - parents"},
+                            {"name":"financial transfers - parents (thousand)"},
+                            {"name":"co-residence - parents"},
+                            {"name":"Parents - look after grandchildren"},
+                            {"name":"Parents - financial support (thousand)"},
+                            {"name":"first child"},
+                            {"name":"second child"},
+                            {"name":"third and higher birthorder child"}
+                        ],
+                        links: [
+                            {"source": "Parents - look after grandchildren", "target": "first child",  "value": 0.25},
+                            {"source": "Parents - financial support (thousand)", "target": "first child",  "value": 0.74464},
+                            {"source": "Parents - look after grandchildren",  "target": "second child",  "value": 0.21},
+                            {"source": "Parents - financial support (thousand)",  "target": "second child",  "value": 0.50865},
+                            {"source": "Parents - look after grandchildren",  "target": "third and higher birthorder child",  "value": 0.13},
+                            {"source": "Parents - financial support (thousand)",  "target": "third and higher birthorder child",  "value": 0.24483},
+                            {"source": "first child", "target": "visit frequency - parents",  "value": 2.56},
+                            {"source": "first child", "target": "remotely contact frequency - parents",  "value": 1.39},
+                            {"source": "first child", "target": "financial transfers - parents (thousand)",  "value": 1.49254},
+                            {"source": "first child", "target": "co-residence - parents", "value": 0.16},
+                            {"source": "second child","target": "visit frequency - parents", "value": 2.48},
+                            {"source": "second child", "target": "remotely contact frequency - parents", "value": 1.19},
+                            {"source": "second child", "target": "financial transfers - parents (thousand)", "value": 1.36670},
+                            {"source": "second child", "target": "co-residence - parents", "value": 0.16},
+                            {"source": "third and higher birthorder child", "target": "visit frequency - parents", "value": 2.30},
+                            {"source": "third and higher birthorder child", "target": "remotely contact frequency - parents", "value": 0.93},
+                            {"source": "third and higher birthorder child", "target": "financial transfers - parents (thousand)", "value": 1.09667},
+                            {"source": "third and higher birthorder child", "target": "co-residence - parents", "value": 0.14}
+                        ],
+                        emphasis: {
+                            focus: 'adjacency'
+                        },
+                        lineStyle: {
+                            color: 'gradient',
+                            curveness: 0.5
+                        }
+                    },
+                ]
+            },
+        ]
+    }
+    );
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option,true);
+}
+
+        </script>
+    </body>
+</html>

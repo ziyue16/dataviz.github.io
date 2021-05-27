@@ -1,0 +1,31 @@
+{"nodes":[
+{"name":"visit frequency - parents"},
+{"name":"remotely contact frequency - parents"},
+{"name":"financial transfers - parents (thousand)"},
+{"name":"co-residence - parents"},
+{"name":"Parents - look after grandchildren"},
+{"name":"Parents - financial support (thousand)"},
+{"name":"first child"},
+{"name":"second child"},
+{"name":"third and higher birthorder child"}
+],
+"links":[
+{"source": "Parents - look after grandchildren", "target": "first child",  "value": 0.25},
+{"source": "Parents - financial support", "target": "first child",  "value": 0.74464},
+{"source": "Parents - look after grandchildren",  "target": "second child",  "value": 0.21},
+{"source": "Parents - financial support",  "target": "second child",  "value": 0.50865},
+{"source": "Parents - look after grandchildren",  "target": "third and higher birthorder child",  "value": 0.13},
+{"source": "Parents - financial support",  "target": "third and higher birthorder child",  "value": 0.24483},
+{"source": "first child", "target": "visit frequency - parents",  "value": 2.56},
+{"source": "first child", "target": "remotely contact frequency - parents",  "value": 1.39},
+{"source": "first child", "target": "financial transfers - parents",  "value": 1.49254},
+{"source": "first child", "target": "co-residence - parents", "value": 0.16},
+{"source": "second child","target": "visit frequency - parents", "value": 2.48},
+{"source": "second child", "target": "remotely contact frequency - parents", "value": 1.19},
+{"source": "second child", "target": "financial transfers - parents", "value": 1.36670},
+{"source": "second child", "target": "co-residence - parents", "value": 0.16},
+{"source": "third and higher birthorder child", "target": "visit frequency - parents", "value": 2.30},
+{"source": "third and higher birthorder child", "target": "remotely contact frequency - parents", "value": 0.93},
+{"source": "third and higher birthorder child", "target": "financial transfers - parents", "value": 1.09667},
+{"source": "third and higher birthorder child", "target": "co-residence - parents", "value": 0.14}
+]}
