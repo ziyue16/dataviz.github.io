@@ -1,0 +1,14 @@
+{
+  "name": "@ziyue16/untitled",
+  "main": "5da5ce90f0ca113e@32.js",
+  "version": "32.0.0",
+  "homepage": "https://observablehq.com/@ziyue16/untitled",
+  "author": {
+    "name": "ziyue16",
+    "url": "https://observablehq.com/@ziyue16"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "name": "donut",
+  "children": [
+    {
+      "name": "central",
+      "children": [
+        {
+          "name": "2011",
+          "children": [
+            {"name": "Higher", "value": 463},
+            {"name": "Senior", "value": 361},
+            {"name": "Junior", "value": 345},
+            {"name": "Elementary", "value": 280},
+            {"name": "others", "value": 252}
+          ]
+        },
+        {
+          "name": "2013",
+          "children": [
+            {"name": "Higher", "value": 2661},
+            {"name": "Senior", "value": 1619},
+            {"name": "Junior", "value": 1350},
+            {"name": "Elementary", "value": 902},
+            {"name": "others", "value": 621}
+          ]
+        },
+        {
+          "name": "2015",
+          "children": [
+            {"name": "Higher", "value": 3462},
+            {"name": "Senior", "value": 2314},
+            {"name": "Junior", "value": 1805},
+            {"name": "Elementary", "value": 1393},
+            {"name": "others", "value": 1003}
+          ]
+        },
+        {
+          "name": "2018",
+          "children": [
+            {"name": "Higher", "value": 3119},
+            {"name": "Senior", "value": 2347},
+            {"name": "Junior", "value": 1940},
+            {"name": "Elementary", "value": 1427},
+            {"name": "others", "value": 790}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "east",
+      "children": [
+        {
+          "name": "2011",
+          "children": [
+            {"name": "Higher", "value": 427},
+            {"name": "Senior", "value": 351},
+            {"name": "Junior", "value": 343},
+            {"name": "Elementary", "value": 366},
+            {"name": "others", "value": 270}
+          ]
+        },
+        {
+          "name": "2013", 
+          "children": [
+            {"name": "Higher", "value": 2461},
+            {"name": "Senior", "value": 1231},
+            {"name": "Junior", "value": 1224},
+            {"name": "Elementary", "value": 1059},
+            {"name": "others", "value": 692}
+          ]
+        },
+        {
+          "name": "2015",
+          "children": [
+            {"name": "Higher", "value": 3827},
+            {"name": "Senior", "value": 1884},
+            {"name": "Junior", "value": 1824},
+            {"name": "Elementary", "value": 1457},
+            {"name": "others", "value": 979}
+          ]
+        },
+        {
+          "name": "2018", 
+          "children": [
+            {"name": "Higher", "value": 4033},
+            {"name": "Senior", "value": 2135},
+            {"name": "Junior", "value": 1997},
+            {"name": "Elementary", "value": 1565},
+            {"name": "others", "value": 1094}
+          ]
+        }   
+      ]
+    },
+    {
+      "name": "north",
+      "children": [
+        {
+          "name": "2011",
+          "children": [
+            {"name": "Higher", "value": 362},
+            {"name": "Senior", "value": 216},
+            {"name": "Junior", "value": 212},
+            {"name": "Elementary", "value": 209},
+            {"name": "others", "value": 159}
+          ]
+        },
+        {
+          "name": "2013", 
+          "children": [
+            {"name": "Higher", "value": 2498},
+            {"name": "Senior", "value": 1051},
+            {"name": "Junior", "value": 988},
+            {"name": "Elementary", "value": 811},
+            {"name": "others", "value": 473}
+          ]
+        },
+        {
+          "name": "2015", 
+          "children": [
+            {"name": "Higher", "value": 3122},
+            {"name": "Senior", "value": 1626},
+            {"name": "Junior", "value": 1500},
+            {"name": "Elementary", "value": 1065},
+            {"name": "others", "value": 865}
+          ]
+        },
+        {
+          "name": "2018", 
+          "children": [
+            {"name": "Higher", "value": 3680},
+            {"name": "Senior", "value": 1982},
+            {"name": "Junior", "value": 1551},
+            {"name": "Elementary", "value": 1151},
+            {"name": "others", "value": 3255}
+          ]
+        } 
+      ]
+    },
+    {
+      "name": "northeast",
+      "children": [
+        {
+          "name": "2011",
+          "children": [
+            {"name": "Higher", "value": 404},
+            {"name": "Senior", "value": 239},
+            {"name": "Junior", "value": 304},
+            {"name": "Elementary", "value": 246},
+            {"name": "others", "value": 206}
+          ]
+        },
+        {
+          "name": "2013", 
+          "children": [
+            {"name": "Higher", "value": 2331},
+            {"name": "Senior", "value": 1945},
+            {"name": "Junior", "value": 1162},
+            {"name": "Elementary", "value": 652},
+            {"name": "others", "value": 524}
+          ]
+        },
+        {
+          "name": "2015", 
+          "children": [ 
+            {"name": "Higher", "value":  2864},
+            {"name": "Senior", "value": 2411},
+            {"name": "Junior", "value": 1373},
+            {"name": "Elementary", "value": 1044},
+            {"name": "others", "value": 717}
+          ]
+        },
+        {
+          "name": "2018", 
+          "children": [
+            {"name": "Higher", "value": 3255},
+            {"name": "Senior", "value": 1502},
+            {"name": "Junior", "value": 1495},
+            {"name": "Elementary", "value": 1062},
+            {"name": "others", "value": 762}
+          ]
+        } 
+      ]
+    },
+    {
+      "name": "northwest",
+      "children": [
+        {
+          "name": "2011",
+          "children": [
+            {"name": "Higher", "value": 284},
+            {"name": "Senior", "value": 136},
+            {"name": "Junior", "value": 153},
+            {"name": "Elementary", "value": 113},
+            {"name": "others", "value": 123}
+          ]
+        },
+        {
+          "name": "2013", 
+          "children": [
+            {"name": "Higher", "value": 2137},
+            {"name": "Senior", "value": 848},
+            {"name": "Junior", "value": 807},
+            {"name": "Elementary", "value": 485},
+            {"name": "others", "value": 388}
+          ]
+        },
+        {
+          "name": "2015", 
+          "children": [
+            {"name": "Higher", "value": 2434},
+            {"name": "Senior", "value": 2032},
+            {"name": "Junior", "value": 1448},
+            {"name": "Elementary", "value": 1344},
+            {"name": "others", "value": 837}
+          ]
+        },
+        {
+          "name": "2018", 
+          "children": [
+            {"name": "Higher", "value": 3230},
+            {"name": "Senior", "value": 2452},
+            {"name": "Junior", "value": 1081},
+            {"name": "Elementary", "value": 897},
+            {"name": "others", "value": 693}
+          ]
+        } 
+      ]
+    },
+    {
+      "name": "south",
+      "children": [
+        {
+          "name": "2011",
+          "children": [
+            {"name": "Higher", "value": 441},
+            {"name": "Senior", "value": 352},
+            {"name": "Junior", "value": 314},
+            {"name": "Elementary", "value": 256},
+            {"name": "others", "value": 219}
+          ]
+        },
+        {
+          "name": "2013", 
+          "children": [
+            {"name": "Higher", "value": 2547},
+            {"name": "Senior", "value": 1683},
+            {"name": "Junior", "value": 1311},
+            {"name": "Elementary", "value": 728},
+            {"name": "others", "value": 546}
+          ]
+        },
+        {
+          "name": "2015", 
+          "children": [
+            {"name": "Higher", "value": 3145},
+            {"name": "Senior", "value": 2047},
+            {"name": "Junior", "value": 2091},
+            {"name": "Elementary", "value": 1345},
+            {"name": "others", "value": 956}
+          ]
+        },
+        {
+          "name": "2018", 
+          "children": [
+            {"name": "Higher", "value": 3357},
+            {"name": "Senior", "value": 2817},
+            {"name": "Junior", "value": 1929},
+            {"name": "Elementary", "value": 1504},
+            {"name": "others", "value": 949}
+          ]
+        } 
+      ]
+    },
+    {
+      "name": "southwest",
+      "children": [
+        {
+          "name": "2011",
+          "children": [
+            {"name": "Higher", "value": 473},
+            {"name": "Senior", "value": 251},
+            {"name": "Junior", "value": 322},
+            {"name": "Elementary", "value": 289},
+            {"name": "others", "value": 175}
+          ]
+        },
+        {
+          "name": "2013", 
+          "children": [
+            {"name": "Higher", "value": 2317},
+            {"name": "Senior", "value": 1344},
+            {"name": "Junior", "value": 1235},
+            {"name": "Elementary", "value": 960},
+            {"name": "others", "value": 658}
+          ]
+        },
+        {
+          "name": "2015", 
+          "children": [
+            {"name": "Higher", "value": 2732},
+            {"name": "Senior", "value": 1472},
+            {"name": "Junior", "value": 1542},
+            {"name": "Elementary", "value": 1469},
+            {"name": "others", "value": 1009}
+          ]
+        },
+        {
+          "name": "2018", 
+          "children": [
+            {"name": "Higher", "value": 3314},
+            {"name": "Senior", "value": 1591},
+            {"name": "Junior", "value": 1668},
+            {"name": "Elementary", "value": 1308},
+            {"name": "others", "value": 836}
+          ]
+        } 
+      ]
+    }
+  ]
+}
